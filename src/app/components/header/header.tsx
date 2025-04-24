@@ -2,13 +2,11 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-
-// Import MUI icons
 import SearchIcon from '@mui/icons-material/Search'
 import { Input } from '@mui/material'
 import { Heart, Menu, ShoppingCart } from 'lucide-react'
 import Image from 'next/image'
-import logo from '../../../public/images/Group 1116606595.png'
+import logo from'../../../../public/images/Group 1116606595.png'
 export default function Navbar() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -18,9 +16,8 @@ export default function Navbar() {
 				<div className='hidden md:flex'>
 					<Image src={logo} alt='logo' />
 				</div>
-
 				<nav className='hidden md:flex items-center gap-6'>
-					<Link href='/' className='font-medium'>
+					<Link href='/home' className='font-medium'>
 						Home
 					</Link>
 					<Link href='/contact' className='font-medium'>
